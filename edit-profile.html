@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <!--Meta Data-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Panel - Edit Profile</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!--Links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Header Start-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo" id="nav-logo-img">
+        </a>
+        <div class="collapse navbar-collapse nav-menu" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-menu-item" href="index.html">İstatistikler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-menu-item" href="calendar.html">Takvim</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-menu-item" href="page.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sayfalar
+              </a>
+              <ul class="dropdown-menu navbar-nav-second">
+                <li class="dropdown-item nav-second-item"><a class="nav-second-link" href="services.html">Servisler</a></li>
+                <li class="dropdown-item nav-second-item"><a class="nav-second-link" href="project.html">Projeler</a></li>
+                <li class="dropdown-item nav-second-item"><a class="nav-second-link" href="concat.html">İletişim</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse nav-account" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">
+                <img src="images/notification.png" alt="" class="nav-account-img">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="message.html">
+                <img src="images/mesage.png" alt="" class="nav-account-img">
+              </a>
+            </li>
+            <button class="nav-item btn btn-secondary nav-profile" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <a href="profile.html">
+                <img src="images/profile.jpeg" alt="" class="nav-account-img nav-account-profile">
+              </a>
+            </button>
+            <ul class="dropdown-menu navbar-nav-second">
+              <li class="dropdown-item nav-second-item">
+                <a href="profile.html" class="nav-second-link">Profilim</a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="edit-profile.html" class="nav-second-link">Profil Düzenle</a>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="#" class="nav-second-link">Aktivite</a>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="#" class="nav-second-link">Ayarlar</a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="#" class="nav-second-link">Çıkış Yap</a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Header End-->
+
+  <!--Main Start-->
+  <main>
+    <div id="content">
+      <form action="">
+        <div class="mb-3">
+            <label class="form-label content-name">Adınız</label>
+            <input class="form-control content-input">
+            <label class="form-label content-name">Soyadınız</label>
+            <input class="form-control content-input">
+        </div>
+        <div class="mb-3">
+          <label class="form-label content-name">Profil Fotoğrafı</label>
+          <input class="form-control content-input" type="file">
+        </div>
+        <div class="mb-3">
+          <label class="form-label content-name">Hakkımda</label>
+          <div class="form-text content-text">Birkaç cümle ile kendinizi tanıtınız.</div>
+          <textarea class="form-control content-input" rows="7" placeholder="Açıklama Yapınız."></textarea>
+        </div>
+        <button type="submit" class="btn color-bg-primary content-button">Kaydet</button>
+      </form>
+    </div>
+  </main>
+  <!--Main End-->
+
+  <!--Footer Start-->
+  <footer>
+    <div class="container-fluid bg-dark text-light border-top border-secondary py-4">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-md-0">&copy; <a class="text-primary" href="https://github.com/Emirhan-Dogan/admin-template">Copyright </a>
+              Github(Emirhan-Dogan) </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">Designed by <a class="text-primary" href="https://www.linkedin.com/in/emirhan-dogan">Emirhan
+                Doğan</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <!--Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

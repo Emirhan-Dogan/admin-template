@@ -1,0 +1,452 @@
+/*Scroll Bar Style*/
+::-webkit-scrollbar {
+      width: 9px;
+}
+
+::-webkit-scrollbar-track {
+      background: aliceblue;
+      border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+      background: #9161f0;
+      border-radius: 50px;
+}
+
+body {
+      margin-bottom: 100px;
+      background-color: rgb(222, 222, 222);
+      padding-top: 20px;
+}
+
+/*Header Style*/
+header {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+}
+
+nav {
+      background-color: rgb(140, 140, 140);
+}
+
+#nav-logo-img {
+      height: 65px;
+}
+
+.nav-menu-item {
+      font-weight: bold;
+      font-size: large;
+      color: white;
+      box-sizing: border-box;
+      border-color: rgba(0, 0, 0, 0);
+      border-radius: 3px;
+      border-style: solid;
+      border-width: 0px 0px 5px 0px;
+}
+
+.nav-menu-item:hover,
+.nav-menu-item:active {
+      color: #6c0bce;
+}
+
+.nav-menu-item:focus {
+      color: #6c0bce;
+      border-color: #6c0bce;
+}
+
+/*Açık olan sayfa*/
+.nav-menu-item-active {
+
+      border-color: #6c0bce;
+}
+
+.nav-second-item {
+      padding: 0px auto;
+      margin: 0px auto;
+}
+
+.nav-second-item:hover,
+.nav-second-item:active {
+      background-color: #9161f0;
+}
+
+.nav-second-link {
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      width: 100%;
+      height: auto;
+}
+
+.nav-second-item:active .nav-second-link,
+.nav-second-item:hover .nav-second-link {
+      color: aliceblue;
+}
+
+.nav-account {
+      position: absolute;
+      right: 2%;
+}
+
+.nav-account-img {
+      width: 45px;
+}
+
+.nav-account-profile {
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+}
+
+.nav-profile,
+.nav-profile:focus,
+.nav-profile:hover,
+.nav-profile:active {
+      background-color: rgba(0, 0, 0, 0) !important;
+      border-width: 0px;
+}
+
+/*Notification Style*/
+#notification {
+      padding: 20px 50px;
+      display: block;
+}
+
+.notification {
+      border-radius: 5px;
+      margin: 15px;
+      background-color: aliceblue;
+      padding: 5px auto;
+      border-color: #9161f0;
+      border-width: 3px;
+      border-style: hidden;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+}
+
+.notification:hover {
+      background-color: lightgray;
+      cursor: pointer;
+}
+
+.notification-img {
+      width: 9%;
+      vertical-align: top;
+      padding-top: 13px;
+      margin: 10px;
+}
+
+.notification-second {
+      display: inline-block;
+      width: 85%;
+      padding: 5px;
+      padding-left: 5px;
+}
+
+.notification-time {
+      margin: 2px;
+      font-size: 0.90em;
+      text-align: right;
+}
+
+.notification-name {
+      font-size: x-large;
+      font-weight: 500;
+      margin: 0px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+}
+
+.notification-text {
+      display: inline-block;
+      margin: 2px;
+      border-width: 1px 0px 0px 0px;
+      border-style: solid;
+      border-color: gray;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+}
+
+/*Message Style*/
+#message {
+      padding: 20px 50px;
+      display: block;
+}
+
+.message {
+      border-radius: 5px;
+      margin: 15px;
+      background-color: aliceblue;
+      padding: 5px auto;
+      border-color: #9161f0;
+      border-width: 3px;
+      border-style: hidden;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+}
+
+.message:hover,
+.message:hover .second-message,
+.second-message:hover,
+.second-message:hover .message {
+      background-color: lightgray;
+      cursor: pointer;
+}
+
+.message-img {
+      width: 85px;
+      height: 85px;
+      vertical-align: top;
+      margin: 10px;
+      border-radius: 25%;
+}
+
+.message-second {
+      display: inline-block;
+      width: 85%;
+      padding: 5px;
+      padding-left: 5px;
+}
+
+.message-time {
+      margin: 2px;
+      font-size: 0.90em;
+      float: right;
+}
+
+.message-name {
+      font-size: x-large;
+      font-weight: 500;
+      margin: 0px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+}
+
+.message-text {
+      display: inline-block;
+      margin: 2px;
+      border-width: 1px 0px 0px 0px;
+      border-style: solid;
+      border-color: gray;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+}
+
+.like-img {
+      width: 20px;
+}
+
+.like-btn {
+      padding-right: 5px;
+      border-width: 0px 1px 0px 0px;
+      float: right;
+      border-width: 0px 0px 0px 0px;
+      background-color: rgba(0, 0, 0, 0);
+}
+
+.second-message {
+      border-radius: 5px;
+      margin: 15px;
+      background-color: aliceblue;
+      padding: 5px auto;
+      width: 87%;
+      margin-left: auto;
+      margin-right: 2%;
+      align-content: center;
+}
+
+/*Page Style Asside*/
+aside {
+      position: fixed;
+      left: 0px;
+      top: 91px;
+      bottom: 0px;
+      width: 15%;
+      background-color: rgb(180, 180, 180);
+      min-width: 130px;
+}
+
+aside ul {
+      list-style-type: none;
+}
+
+.aside-btn {
+      font-size: 1.135em;
+      padding: 6px;
+}
+
+.aside-btn,
+.aside-btn:hover,
+.aside-btn:focus,
+.aside-btn:active {
+      background-color: rgba(0, 0, 0, 0) !important;
+      border-width: 0px 0px 0px 0px;
+}
+
+.aside {
+      padding: 5px 10px;
+}
+
+.aside-item {
+      margin: 5px 0px;
+      border-radius: 4px;
+}
+
+.aside-item:hover {
+      background-color: #9161f0;
+      color: white;
+}
+
+.aside-item div,
+.aside-item div button {
+      display: block !important;
+      width: 100%;
+      text-align: left;
+}
+
+.aside-second-link {
+      margin: 0px auto;
+}
+
+.aside-second-link:hover,
+.aside-btn:active .aside-second-link,
+.aside-btn:focus .aside-second-link {
+      background-color: #9161f0;
+      color: white;
+}
+
+/*Page Style*/
+#main-content {
+      margin-left: 15%;
+}
+
+#content {
+      width: 80%;
+      margin: 95px auto 0px auto;
+      box-shadow: 0 0 0 0.20rem rgba(145, 97, 240, .35);
+      border-color: #9161f0;
+      border-radius: 5px;
+      border-width: 7px;
+      background-color: #9161f0;
+      box-sizing: border-box;
+      padding: 25px 15px 55px 15px;
+}
+
+.content-name {
+      color: white;
+      font-weight: 700;
+}
+
+.content-text {
+      color: white;
+}
+
+.content-input {
+      background-color: rgb(222, 222, 222);
+}
+
+.content-input:focus {
+      box-shadow: 0 0 0 0.20rem rgba(255, 255, 255, .55);
+      border-color: white;
+}
+
+.content-button {
+      color: rgb(222, 222, 222);
+      border-radius: 4px;
+      border-color: rgb(222, 222, 222);
+      border-width: 2px;
+      border-style: outset;
+      font-weight: 800;
+      float: right;
+}
+
+.content-button:hover,
+.content-button:active {
+      background-color: rgb(222, 222, 222) !important;
+      color: #9161f0 !important;
+}
+
+/*Profile Style*/
+#profile {
+      padding: 20px 50px;
+      display: block;
+}
+
+.profile {
+      border-radius: 5px;
+      margin: 15px;
+      background-color: aliceblue;
+      padding: 5px auto;
+      border-color: #9161f0;
+      border-width: 3px;
+      border-style: hidden;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+}
+
+.profile:hover {
+      background-color: lightgray;
+      cursor: pointer;
+}
+
+.profile-img {
+      width: 9%;
+      vertical-align: top;
+      padding-top: 13px;
+      margin: 10px;
+}
+
+.profile-second {
+      display: inline-block;
+      width: 85%;
+      padding: 5px;
+      padding-left: 5px;
+}
+
+.profile-time {
+      margin: 2px;
+      font-size: 0.90em;
+      text-align: right;
+}
+
+.profile-name {
+      font-size: x-large;
+      font-weight: 500;
+      margin: 0px;
+}
+
+.profile-text {
+      display: inline-block;
+      margin: 2px;
+      border-width: 1px 0px 0px 0px;
+      border-style: solid;
+      border-color: gray;
+}
+
+/*Footer Style*/
+footer {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+}
+
+footer div.container-fluid {
+      padding: 12px !important;
+}

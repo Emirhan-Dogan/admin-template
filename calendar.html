@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <!--Meta Data-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Panel - Calendar</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!--Links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/calendar.css" />
+</head>
+
+<body>
+  <!--Header Start-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo" id="nav-logo-img">
+        </a>
+        <div class="collapse navbar-collapse nav-menu" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-menu-item" href="index.html">İstatistikler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-menu-item nav-menu-item-active" href="calendar.html">Takvim</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-menu-item" href="page.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sayfalar
+              </a>
+              <ul class="dropdown-menu navbar-nav-second">
+                <li class="dropdown-item nav-second-item"><a class="nav-second-link" href="services.html">Servisler</a>
+                </li>
+                <li class="dropdown-item nav-second-item"><a class="nav-second-link" href="project.html">Projeler</a>
+                </li>
+                <li class="dropdown-item nav-second-item"><a class="nav-second-link" href="concat.html">İletişim</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse nav-account" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">
+                <img src="images/notification.png" alt="" class="nav-account-img">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="message.html">
+                <img src="images/mesage.png" alt="" class="nav-account-img">
+              </a>
+            </li>
+            <button class="nav-item btn btn-secondary nav-profile" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <a href="profile.html">
+                <img src="images/profile.jpeg" alt="" class="nav-account-img nav-account-profile">
+              </a>
+            </button>
+            <ul class="dropdown-menu navbar-nav-second">
+              <li class="dropdown-item nav-second-item">
+                <a href="profile.html" class="nav-second-link">Profilim</a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="edit-profile.html" class="nav-second-link">Profil Düzenle</a>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="#" class="nav-second-link">Aktivite</a>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="#" class="nav-second-link">Ayarlar</a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li class="dropdown-item nav-second-item">
+                <a href="#" class="nav-second-link">Çıkış Yap</a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Header End-->
+
+  <!--Main Start-->
+  <main>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            <button class="today-btn">Today</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">wed</div>
+          <div class="event-date">12th december 2022</div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Add Event</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Time From" class="event-time-from" />
+            </div>
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Time To" class="event-time-to" />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+  </main>
+  <!--Main End-->
+
+  <!--Footer Start-->
+  <footer>
+    <div class="container-fluid bg-dark text-light border-top border-secondary py-4">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-md-0">&copy; <a class="text-primary" href="https://github.com/Emirhan-Dogan/admin-template">Copyright </a>
+              Github(Emirhan-Dogan) </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">Designed by <a class="text-primary" href="https://www.linkedin.com/in/emirhan-dogan">Emirhan
+                Doğan</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <!--Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
