@@ -8,6 +8,18 @@
       border-radius: 50px;
 }
 
+/*Cursor Selected Style*/
+::selection 
+{
+   background-color: #9161f0;
+   color: white;
+}
+::-moz-selection
+{
+      background-color: #9161f0;
+      color: white;
+}
+
 ::-webkit-scrollbar-thumb {
       background: #9161f0;
       border-radius: 50px;
