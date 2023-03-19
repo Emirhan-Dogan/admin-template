@@ -16,7 +16,7 @@
 body {
       margin-bottom: 100px;
       background-color: rgb(222, 222, 222);
-      padding-top: 20px;
+      padding-top: 10px;
 }
 
 /*Header Style*/
@@ -54,6 +54,25 @@ nav {
 .nav-menu-item:focus {
       color: #6c0bce;
       border-color: #6c0bce;
+}
+
+.fullscreen{
+      background-color: rgba(0, 0, 0, 0);
+      border-width: 0px;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      display: inline-block;
+      box-sizing: border-box;
+}
+.fullscreen:hover img{
+      width: 35px;
+      height: 35px;
+      
+}
+.fullscreen img{
+      width: 40px;
+      height: 40px;
 }
 
 /*Açık olan sayfa*/
@@ -329,6 +348,20 @@ aside ul {
       color: white;
 }
 
+.scroll{
+      bottom: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 0.75rem 0 0;
+      position: absolute;
+      scroll-behavior: smooth;
+      top: 0;
+      width: 100%;
+}
+
 /*Page Style*/
 #main-content {
       margin-left: 15%;
@@ -450,3 +483,4 @@ footer {
 footer div.container-fluid {
       padding: 12px !important;
 }
+

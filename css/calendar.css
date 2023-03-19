@@ -627,7 +627,7 @@ body {
 
 .container {
     position: absolute;
-    top: 100px;
+    top: 90px;
     right: 15px;
     left: 15px;
     z-index: -1;
